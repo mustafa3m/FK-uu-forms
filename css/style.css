@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    background: turquoise;
+    grid: 'nav nav nav nav' 1fr
+    ' sidebar main main main' 1fr
+    'sidebar Content1 Content2 Content3  '1fr
+    'sidebar footer footer footer'1fr / 0.2fr 1.2fr 1.5fr ;
+    gap: 5px;
+}
+
+nav{
+    grid-area: 'nav';
+    background: red;
+}
+main{
+    grid-area: 'main';
+    background: green;
+}
+
+
+ #sidebar{
+    grid-area: 'sidebar';
+    background: blueviolet;
+}
+#content1{
+    grid-area: ' content1';
+    background: yellow;
+}
+#content2{
+    grid-area: 'content2';
+    background: rebeccapurple;
+}
+#content3{ 
+    grid-area: 'content3';
+    background: burlywood;
+}
+footer{
+     grid-area: 'footer';
+    background: grey;
+
+}
+
+input{
+    display: block;
+}
